@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  container:
+    build: .
+    image: docker-vuejs
+    container_name: vuejs
+    volumes:
+      - ./workspace:/workspace
+    ports:
+      - 8080:8080
